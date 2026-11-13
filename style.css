@@ -1,0 +1,112 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6fb;
+    color: #2d3748;
+    padding: 20px;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #4c51bf;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #718096;
+    font-size: 0.95rem;
+}
+
+/* Cartões de Resumo */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #667eea;
+}
+
+.card.destaque {
+    border-left-color: #38b2ac;
+    background: #e6fffa;
+}
+
+.card span {
+    font-size: 0.85rem;
+    color: #4a5568;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    color: #1a202c;
+}
+
+/* Caixa do Gráfico */
+.grafico-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+}
+
+.controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #434190;
+}
+
+.canvas-wrapper {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #a0aec0;
+}
