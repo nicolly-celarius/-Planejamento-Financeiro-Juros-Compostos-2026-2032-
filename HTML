@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Evolução Financeira | 1ª Série EM</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importando a biblioteca Chart.js via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💰 Evolução Financeira (18 aos 24 anos)</h1>
+            <p>Simulação de Reserva Anual + Juros Compostos (5% a.a.) • 1ª Série Ensino Médio</p>
+        </header>
+
+        <!-- Cartões de Resumo -->
+        <section class="cards">
+            <div class="card">
+                <span>Salário em 2026 (18 anos)</span>
+                <h2>R$ 1.500,00</h2>
+            </div>
+            <div class="card">
+                <span>Salário em 2032 (24 anos)</span>
+                <h2>R$ 2.657,34</h2>
+            </div>
+            <div class="card destaque">
+                <span>Patrimônio Final (2032)</span>
+                <h2>R$ 1.949,82</h2>
+            </div>
+        </section>
+
+        <!-- Área do Gráfico -->
+        <section class="grafico-box">
+            <div class="controles">
+                <h3>Composição do Valor Final por Ano</h3>
+                <button id="btnAlternar">Alternar para Gráfico de Área/Linha</button>
+            </div>
+            <div class="canvas-wrapper">
+                <canvas id="meuGrafico"></canvas>
+            </div>
+        </section>
+
+        <footer>
+            <p>Desenvolvido para o portfólio no GitHub • Dados extraídos da planilha de simulação</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
